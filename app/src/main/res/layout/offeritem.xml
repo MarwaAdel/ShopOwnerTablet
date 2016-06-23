@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for weather forecast list item for future day (not today) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/offerImg"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:src="@drawable/add_pic"/>
+
+
+
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/titlteoffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:hint="title"/>
+
+        <TextView
+            android:id="@+id/descriptionoffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="descriptionoffer"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/priceoffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="priceoffer"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/detailBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"
+                    android:padding="12.5dp"
+                    android:background="@drawable/info_icon_active"
+                    />
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/analysis_icon_unactive"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/analysisBtn"
+                    android:padding="10.1dp"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
